@@ -5,13 +5,6 @@ import { useNavigation } from '@react-navigation/native'
 
 const LoginScreen = () => {
   const {signInWithGoogle} = useAuth()
-  const navigation = useNavigation()
-
-  useLayoutEffect(()=>{
-    navigation.setOptions({
-      headerShown:false
-    })
-  },[])
 
   return (
     <View className="flex-1">
