@@ -12,13 +12,13 @@ Tinder React Native app
     <td valign="top">
       <img width="335" alt="image" src="https://user-images.githubusercontent.com/60651308/178610110-0f8c1b83-ed89-4c73-9364-d2bc22c99764.png">
     </td>
-    <td valign="top">
-      <img width="335" alt="image" src="https://user-images.githubusercontent.com/60651308/178610272-44e6bb2e-3b62-438c-aab8-af4ba52f7c44.png">
-    </td>
   </tr>
   <tr>
-   <td valign="top">
-      <img width="335" alt="image" src="https://user-images.githubusercontent.com/60651308/178610287-bb5650da-997d-443c-9773-4bcb29f310dd.png">
-    </td>
+    <td valign="top">
+        <img width="335" alt="image" src="https://user-images.githubusercontent.com/60651308/178610272-44e6bb2e-3b62-438c-aab8-af4ba52f7c44.png">
+      </td>
+     <td valign="top">
+        <img width="335" alt="image" src="https://user-images.githubusercontent.com/60651308/178610287-bb5650da-997d-443c-9773-4bcb29f310dd.png">
+      </td>
   </tr>
 </table>
