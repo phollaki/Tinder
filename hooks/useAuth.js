@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react"
+import { createContext, useContext, useEffect, useMemo, useState } from "react"
 import * as WebBrowser from 'expo-web-browser';
 import * as Google from 'expo-auth-session/providers/google';
 import { auth, GoogleAuthProvider, signInWithCredential } from './../firebase';
@@ -49,8 +49,16 @@ export const AuthProvider = ({children}) => {
       signOut(auth).catch((error)=>console.log(error)).finally(()=>setLoading(false))
     }
 
+    const memoedValue = useMemo(()=>({
+      user,
+      signInWithGoogle: promptAsync,
+      error,
+      loading,
+      logout
+    }),[ user, error, loading ])
+
     return (
-        <AuthContext.Provider value={{ user,signInWithGoogle: promptAsync,error,loading,logout}}>
+        <AuthContext.Provider value={memoedValue}>
            {!initialLoading && children}
         </AuthContext.Provider>
     )
