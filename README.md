@@ -1,5 +1,4 @@
-# Tinder
-Tinder React Native app
+# Tinder clone with ContextAPI, Tailwind, Google Auth, Firebase !! 🚀🧨
 
 <table>
   <tr>
